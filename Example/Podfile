@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'OnDocCalendar_Example' do
+  pod 'OnDocCalendar', :path => '../'
+
+  target 'OnDocCalendar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,16 @@
+PODS:
+  - OnDocCalendar (0.1.0)
+
+DEPENDENCIES:
+  - OnDocCalendar (from `../`)
+
+EXTERNAL SOURCES:
+  OnDocCalendar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OnDocCalendar: cc97c576ef25c0a919ba47da025a220481b23f6a
+
+PODFILE CHECKSUM: 24f7b923afa091e800890d219c202318e424d9c1
+
+COCOAPODS: 1.11.3

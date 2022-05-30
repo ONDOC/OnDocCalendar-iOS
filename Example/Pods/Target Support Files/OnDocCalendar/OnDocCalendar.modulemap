@@ -1,0 +1,6 @@
+framework module OnDocCalendar {
+  umbrella header "OnDocCalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}
