@@ -31,9 +31,11 @@ struct ODCalendarCell_Previews : PreviewProvider {
         let manager = ODCalendarManager(titleText: "Title",
                                         rightButtonText: "Right",
                                         doneButtonText: "Done",
+                                        activeUIColor: UIColor.red,
+                                        disabledUIColor: UIColor.lightGray,
                                         minimumDate: Date(),
                                         maximumDate: Date().addingTimeInterval(60*60*24*365), disabledDates: [Date().addingTimeInterval(60*60*24*3),
-                                                                                                              Date().addingTimeInterval(60*60*24*4)])
+                                                                                                              Date().addingTimeInterval(60*60*24*4)], selectedDate: Date())
         Group {
             ODCalendarCell(date: ODCalendarDate(date: Date(),
                                                 manager: manager,

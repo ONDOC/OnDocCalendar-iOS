@@ -19,7 +19,7 @@ public class ODCalendarManager : ObservableObject {
     @Published var maximumDate: Date = Date()
     @Published var disabledDates: [Date] = [Date]()
     @Published var calendar = Calendar.current
-    @Published var selectedDate: Date! = nil
+    @Published var selectedDate: Date?
     @Published var startDate: Date! = nil
     @Published var endDate: Date! = nil
     var colors = ODCalendarColorSettings()
@@ -33,7 +33,7 @@ public class ODCalendarManager : ObservableObject {
                 minimumDate: Date,
                 maximumDate: Date,
                 disabledDates: [Date],
-                selectedDate: Date) {
+                selectedDate: Date?) {
         self.titleText = titleText
         self.rightButtonText = rightButtonText
         self.doneButtonText = doneButtonText

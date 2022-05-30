@@ -68,7 +68,7 @@ struct ODCalendarMonth: View {
     func dateTapped(date: Date) {
         if self.isEnabled(date: date) {
             if self.manager.selectedDate != nil &&
-                self.manager.calendar.isDate(self.manager.selectedDate, inSameDayAs: date) {
+                self.manager.calendar.isDate(self.manager.selectedDate!, inSameDayAs: date) {
                 self.manager.selectedDate = nil
             } else {
                 self.manager.selectedDate = date
@@ -152,7 +152,7 @@ struct ODCalendarMonth: View {
         if manager.selectedDate == nil {
             return false
         }
-        return formatAndCompareDate(date: date, referenceDate: manager.selectedDate)
+        return formatAndCompareDate(date: date, referenceDate: manager.selectedDate ?? Date())
     }
     
     func isStartDate(date: Date) -> Bool {
@@ -200,9 +200,11 @@ struct ODCalendarMonth_Previews : PreviewProvider {
         let manager = ODCalendarManager(titleText: "Title",
                                         rightButtonText: "Right",
                                         doneButtonText: "Done",
+                                        activeUIColor: UIColor.red,
+                                        disabledUIColor: UIColor.lightGray,
                                         minimumDate: Date(),
                                         maximumDate: Date().addingTimeInterval(60*60*24*365), disabledDates: [Date().addingTimeInterval(60*60*24*3),
-                                                                                                              Date().addingTimeInterval(60*60*24*4)])
+                                                                                                              Date().addingTimeInterval(60*60*24*4)], selectedDate: Date())
         ODCalendarMonth(manager: manager,
                         monthOffset: 0)
     }
