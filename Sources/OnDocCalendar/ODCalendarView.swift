@@ -21,7 +21,8 @@ public struct ODCalendarView: View {
     // MARK: - View -
     public var body: some View {
         Group {
-            HStack(alignment: .center, spacing: 0) {
+            HStack(alignment: .center,
+                   spacing: 0) {
                 Button {
                     dateSelected(nil)
                 } label: {
@@ -30,7 +31,7 @@ public struct ODCalendarView: View {
                             .foregroundColor(manager.colors.selectedBackColor)
                             .frame(width: 32, height: 32)
                 }
-                .background(manager.colors.disabledColor)
+                .background(manager.colors.disabledColor.opacity(0.5))
                 .clipShape(Circle())
                 Spacer()
                 Text(manager.titleText)
@@ -126,8 +127,8 @@ extension View {
 
 struct ODCalendarView_Previews : PreviewProvider {
     static var previews: some View {
-        let manager = ODCalendarManager(titleText: "Title",
-                                        rightButtonText: "Right",
+        let manager = ODCalendarManager(titleText: "Запись на прием",
+                                        rightButtonText: "Cбросить",
                                         doneButtonText: "Done",
                                         activeUIColor: UIColor.red,
                                         disabledUIColor: UIColor.lightGray,

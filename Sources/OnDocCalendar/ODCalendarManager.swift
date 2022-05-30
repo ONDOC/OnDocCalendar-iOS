@@ -45,7 +45,7 @@ public class ODCalendarManager : ObservableObject {
         self.selectedDate = selectedDate
         colors.selectedBackColor = Color(activeUIColor)
         colors.disabledColor = Color(disabledUIColor)
-        colors.todayBackColor = Color(activeUIColor)
+        colors.todayBackColor = Color(disabledUIColor)
         colors.weekdayHeaderColor = Color(disabledUIColor)
     }
     
