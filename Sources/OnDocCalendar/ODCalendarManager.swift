@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-class ODCalendarManager : ObservableObject {
+public class ODCalendarManager : ObservableObject {
     // MARK: - Properties -
     @Published var titleText: String!
     @Published var rightButtonText: String!

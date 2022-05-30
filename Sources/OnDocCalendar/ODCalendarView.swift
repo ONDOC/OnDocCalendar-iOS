@@ -8,13 +8,18 @@
 
 import SwiftUI
 
-struct ODCalendarView: View {
+public struct ODCalendarView: View {
     // MARK: - Properties -
     @ObservedObject var manager: ODCalendarManager
     var dateSelected: ((Date?) -> Void)
     
+    public init(manager: ODCalendarManager,
+                dateSelected: @escaping ((Date?) -> Void)) {
+        self.manager = manager
+        self.dateSelected = dateSelected
+    }
     // MARK: - View -
-    var body: some View {
+    public var body: some View {
         Group {
             HStack(alignment: .center, spacing: 0) {
                 Button {
@@ -128,7 +133,7 @@ struct ODCalendarView_Previews : PreviewProvider {
                                         maximumDate: Date().addingTimeInterval(60*60*24*365), disabledDates: [Date().addingTimeInterval(60*60*24*3),
                                                                                                               Date().addingTimeInterval(60*60*24*4)])
         Group {
-            ODCalendarView(manager: manager) { dateSelected in
+            ODCalendarView.init(manager: manager) { dateSelected in
                 print(dateSelected ?? "")
             }
         }
