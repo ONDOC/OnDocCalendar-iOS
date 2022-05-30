@@ -15,7 +15,6 @@ class ODCalendarColorSettings : ObservableObject {
     @Published var todayColor: Color = Color.white
     @Published var selectedColor: Color = Color.white
     @Published var disabledColor: Color = Color.gray
-    @Published var betweenStartAndEndColor: Color = Color.white
     // Background colors
     @Published var textBackColor: Color = Color.clear
     @Published var todayBackColor: Color = Color.gray

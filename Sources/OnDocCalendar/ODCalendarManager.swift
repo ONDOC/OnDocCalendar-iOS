@@ -13,7 +13,8 @@ public class ODCalendarManager : ObservableObject {
     @Published var titleText: String!
     @Published var rightButtonText: String!
     @Published var doneButtonText: String!
-    @Published var brandingUIColor: UIColor = .orange
+    @Published var activeUIColor: UIColor = .orange
+    @Published var disabledUIColor: UIColor = .gray
     @Published var minimumDate: Date = Date()
     @Published var maximumDate: Date = Date()
     @Published var disabledDates: [Date] = [Date]()
@@ -27,18 +28,25 @@ public class ODCalendarManager : ObservableObject {
     public init(titleText: String,
                 rightButtonText: String,
                 doneButtonText: String,
-                brandingUIColor: UIColor = UIColor.orange,
+                activeUIColor: UIColor,
+                disabledUIColor: UIColor,
                 minimumDate: Date,
                 maximumDate: Date,
-                disabledDates: [Date]) {
+                disabledDates: [Date],
+                selectedDate: Date) {
         self.titleText = titleText
         self.rightButtonText = rightButtonText
         self.doneButtonText = doneButtonText
         self.minimumDate = minimumDate
         self.maximumDate = maximumDate
         self.disabledDates = disabledDates
-        self.brandingUIColor = brandingUIColor
-        colors.selectedBackColor = Color(brandingUIColor)
+        self.activeUIColor = activeUIColor
+        self.disabledUIColor = disabledUIColor
+        self.selectedDate = selectedDate
+        colors.selectedBackColor = Color(activeUIColor)
+        colors.disabledColor = Color(disabledUIColor)
+        colors.todayBackColor = Color(activeUIColor)
+        colors.weekdayHeaderColor = Color(disabledUIColor)
     }
     
     // MARK: - Actions -
