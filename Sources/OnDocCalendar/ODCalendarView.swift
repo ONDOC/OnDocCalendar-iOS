@@ -31,7 +31,7 @@ public struct ODCalendarView: View {
                             .foregroundColor(manager.colors.selectedBackColor)
                             .frame(width: 32, height: 32)
                 }
-                .background(manager.colors.disabledColor.opacity(0.5))
+                .background(manager.colors.disabledColor.opacity(0.25))
                 .clipShape(Circle())
                 Spacer()
                 Text(manager.titleText)

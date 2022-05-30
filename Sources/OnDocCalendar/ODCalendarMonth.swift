@@ -17,7 +17,7 @@ struct ODCalendarMonth: View {
     var monthsArray: [[Date]] {
         monthArray()
     }
-    let cellWidth = CGFloat(32)
+    let cellWidth = CGFloat(44)
     let cellHeight = CGFloat(32)
     
     // MARK: - View -

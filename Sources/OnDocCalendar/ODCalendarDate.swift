@@ -50,7 +50,7 @@ struct ODCalendarDate {
     func getBackgroundColor() -> Color {
         var backgroundColor = manager.colors.textBackColor
         if isToday {
-            backgroundColor = manager.colors.todayBackColor
+            backgroundColor = manager.colors.todayBackColor.opacity(0.25)
         }
         if isDisabled {
             backgroundColor = manager.colors.disabledBackColor
