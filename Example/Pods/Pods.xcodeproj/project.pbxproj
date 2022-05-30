@@ -53,7 +53,7 @@
 		1291A6252844E54E002937AD /* ODCalendarMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ODCalendarMonth.swift; path = ../../OnDocCalendar/Classes/ODCalendarMonth.swift; sourceTree = "<group>"; };
 		1291A6262844E54F002937AD /* ODCalendarColorSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ODCalendarColorSettings.swift; path = ../../OnDocCalendar/Classes/ODCalendarColorSettings.swift; sourceTree = "<group>"; };
 		1306EBA0246B451B1C463EB45E62DC50 /* Pods-OnDocCalendar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OnDocCalendar_Tests-dummy.m"; sourceTree = "<group>"; };
-		231F8BBE017A683BA7FF54FD34E76FF4 /* Pods-OnDocCalendar_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OnDocCalendar_Example"; path = Pods_OnDocCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		231F8BBE017A683BA7FF54FD34E76FF4 /* Pods_OnDocCalendar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnDocCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3414BFAAA0609C017DB1634551FE5C38 /* Pods-OnDocCalendar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnDocCalendar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		34C098986D454D86978C20DB07E9FA74 /* OnDocCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnDocCalendar-prefix.pch"; sourceTree = "<group>"; };
 		34EAC51726B5DA8A0633145ED84D19B5 /* OnDocCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OnDocCalendar-Info.plist"; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		7ACC09D729F4265329636C72FD49CC71 /* OnDocCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OnDocCalendar.modulemap; sourceTree = "<group>"; };
 		84DCB2290D990C241CE85E1B1E155E6B /* Pods-OnDocCalendar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OnDocCalendar_Example-frameworks.sh"; sourceTree = "<group>"; };
 		881F6D03428451342BCB1975A6C1019C /* Pods-OnDocCalendar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnDocCalendar_Example.modulemap"; sourceTree = "<group>"; };
-		8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods-OnDocCalendar_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OnDocCalendar_Tests"; path = Pods_OnDocCalendar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods_OnDocCalendar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnDocCalendar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A5523A1C52F5DE955134E875A46B4601 /* OnDocCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnDocCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF330A521BE1DFF7E38CE8D3CC26BC55 /* Pods-OnDocCalendar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnDocCalendar_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -206,8 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				A5523A1C52F5DE955134E875A46B4601 /* OnDocCalendar.framework */,
-				231F8BBE017A683BA7FF54FD34E76FF4 /* Pods-OnDocCalendar_Example */,
-				8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods-OnDocCalendar_Tests */,
+				231F8BBE017A683BA7FF54FD34E76FF4 /* Pods_OnDocCalendar_Example.framework */,
+				8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods_OnDocCalendar_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,7 +287,7 @@
 			);
 			name = "Pods-OnDocCalendar_Example";
 			productName = Pods_OnDocCalendar_Example;
-			productReference = 231F8BBE017A683BA7FF54FD34E76FF4 /* Pods-OnDocCalendar_Example */;
+			productReference = 231F8BBE017A683BA7FF54FD34E76FF4 /* Pods_OnDocCalendar_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C48005F64340745CC01A1479910686F0 /* Pods-OnDocCalendar_Tests */ = {
@@ -306,7 +306,7 @@
 			);
 			name = "Pods-OnDocCalendar_Tests";
 			productName = Pods_OnDocCalendar_Tests;
-			productReference = 8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods-OnDocCalendar_Tests */;
+			productReference = 8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods_OnDocCalendar_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C8B273602779F41D41191C415DA635C7 /* OnDocCalendar */ = {
@@ -450,7 +450,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-OnDocCalendar_Tests/Pods-OnDocCalendar_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-OnDocCalendar_Tests/Pods-OnDocCalendar_Tests.modulemap";
@@ -461,7 +461,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -550,16 +551,17 @@
 				GCC_PREFIX_HEADER = "Target Support Files/OnDocCalendar/OnDocCalendar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/OnDocCalendar/OnDocCalendar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/OnDocCalendar/OnDocCalendar.modulemap";
 				PRODUCT_MODULE_NAME = OnDocCalendar;
 				PRODUCT_NAME = OnDocCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -581,7 +583,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-OnDocCalendar_Example/Pods-OnDocCalendar_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-OnDocCalendar_Example/Pods-OnDocCalendar_Example.modulemap";
@@ -592,7 +594,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -615,17 +618,18 @@
 				GCC_PREFIX_HEADER = "Target Support Files/OnDocCalendar/OnDocCalendar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/OnDocCalendar/OnDocCalendar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/OnDocCalendar/OnDocCalendar.modulemap";
 				PRODUCT_MODULE_NAME = OnDocCalendar;
 				PRODUCT_NAME = OnDocCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -707,7 +711,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-OnDocCalendar_Example/Pods-OnDocCalendar_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-OnDocCalendar_Example/Pods-OnDocCalendar_Example.modulemap";
@@ -718,7 +722,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -739,7 +744,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-OnDocCalendar_Tests/Pods-OnDocCalendar_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-OnDocCalendar_Tests/Pods-OnDocCalendar_Tests.modulemap";
@@ -750,7 +755,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
