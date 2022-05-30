@@ -24,6 +24,7 @@
         let swiftUIView = ODCalendarView(manager: manager,
                                          dateSelected: { dateSelected in
             print(dateSelected ?? "")
+            // Dismissing UIViewController
             self.dismiss(animated: true)
         })
         // Create UIViewController
