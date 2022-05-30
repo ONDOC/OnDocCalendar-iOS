@@ -1,5 +1,8 @@
 # OnDocCalendar
 ```swift
+        import SwiftUI
+        import OnDocCalendar
+
         // Properties
         let disabledDates = [Date().addingTimeInterval(60 * 60 * 24 * 3),
                              Date().addingTimeInterval(60 * 60 * 24 * 5),
