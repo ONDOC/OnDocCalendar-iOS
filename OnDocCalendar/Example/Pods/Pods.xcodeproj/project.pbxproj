@@ -11,6 +11,20 @@
 		05EC50E8DEECDFA79448B3F09E31D58F /* Pods-OnDocCalendar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7F3965B76EBB0CCAF45436A6D4BDFD /* Pods-OnDocCalendar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BE1AF9E33D71C33F7FA111D9DD95EDD /* OnDocCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE82842EF7BC40FC25D5A0BA978EE2A /* OnDocCalendar-dummy.m */; };
 		0D1DA36C8AB93DB78A2B20C65EDBCCE3 /* OnDocCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A466CC5CE3F0819C16ED4F5A3640A78F /* OnDocCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1291A65A2844F2EB002937AD /* ODCalendarMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707683D8C89383D6AE20AD3719149E /* ODCalendarMonth.swift */; };
+		1291A65B2844F2EB002937AD /* ODCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A202660EDD65277E0FFA9ED5EE618B6 /* ODCalendarView.swift */; };
+		1291A65C2844F2EB002937AD /* ODCalendarColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EBFBEF5CDF9EEE2FB3C8D1D0F90F4 /* ODCalendarColorSettings.swift */; };
+		1291A65D2844F2EB002937AD /* ODCalendarWeekdayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07084082C73436238B62998D36A46761 /* ODCalendarWeekdayHeader.swift */; };
+		1291A65E2844F2EB002937AD /* ODCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC964ADC2A827D1F126F9DD0930443 /* ODCalendarCell.swift */; };
+		1291A65F2844F2EB002937AD /* ODCalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB76C22A12D890736714AF274DBF39AE /* ODCalendarDate.swift */; };
+		1291A6602844F2EB002937AD /* ODCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E570563471AF4837F0C74A1B4C549A7 /* ODCalendarManager.swift */; };
+		1291A6612844F2EB002937AD /* ODCalendarMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707683D8C89383D6AE20AD3719149E /* ODCalendarMonth.swift */; };
+		1291A6622844F2EB002937AD /* ODCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A202660EDD65277E0FFA9ED5EE618B6 /* ODCalendarView.swift */; };
+		1291A6632844F2EB002937AD /* ODCalendarColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EBFBEF5CDF9EEE2FB3C8D1D0F90F4 /* ODCalendarColorSettings.swift */; };
+		1291A6642844F2EB002937AD /* ODCalendarWeekdayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07084082C73436238B62998D36A46761 /* ODCalendarWeekdayHeader.swift */; };
+		1291A6652844F2EB002937AD /* ODCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC964ADC2A827D1F126F9DD0930443 /* ODCalendarCell.swift */; };
+		1291A6662844F2EB002937AD /* ODCalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB76C22A12D890736714AF274DBF39AE /* ODCalendarDate.swift */; };
+		1291A6672844F2EB002937AD /* ODCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E570563471AF4837F0C74A1B4C549A7 /* ODCalendarManager.swift */; };
 		25F1268CBE58F8E29DF35B0BF33DD245 /* ODCalendarMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB707683D8C89383D6AE20AD3719149E /* ODCalendarMonth.swift */; };
 		2A354C33866192CED0E05207C466AE85 /* Pods-OnDocCalendar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 747420308CC93C547B127BC49E392A22 /* Pods-OnDocCalendar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		471B0F3748AC7CF5F569640F82628333 /* ODCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC964ADC2A827D1F126F9DD0930443 /* ODCalendarCell.swift */; };
@@ -48,7 +62,7 @@
 		0A202660EDD65277E0FFA9ED5EE618B6 /* ODCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODCalendarView.swift; path = OnDocCalendar/Classes/ODCalendarView.swift; sourceTree = "<group>"; };
 		0A7F3965B76EBB0CCAF45436A6D4BDFD /* Pods-OnDocCalendar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OnDocCalendar_Tests-umbrella.h"; sourceTree = "<group>"; };
 		1306EBA0246B451B1C463EB45E62DC50 /* Pods-OnDocCalendar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OnDocCalendar_Tests-dummy.m"; sourceTree = "<group>"; };
-		231F8BBE017A683BA7FF54FD34E76FF4 /* Pods-OnDocCalendar_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OnDocCalendar_Example"; path = Pods_OnDocCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		231F8BBE017A683BA7FF54FD34E76FF4 /* Pods_OnDocCalendar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnDocCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2481A4DCC80C2CEDDF4E27C2F5742DE5 /* OnDocCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnDocCalendar.release.xcconfig; sourceTree = "<group>"; };
 		3414BFAAA0609C017DB1634551FE5C38 /* Pods-OnDocCalendar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OnDocCalendar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		650E2C5FDCEA1279C667AD7C70DC130E /* Pods-OnDocCalendar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OnDocCalendar_Example-Info.plist"; sourceTree = "<group>"; };
@@ -58,12 +72,12 @@
 		7800E2145933E3C626AF7178CDDC6B0F /* OnDocCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OnDocCalendar.modulemap; sourceTree = "<group>"; };
 		84DCB2290D990C241CE85E1B1E155E6B /* Pods-OnDocCalendar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OnDocCalendar_Example-frameworks.sh"; sourceTree = "<group>"; };
 		881F6D03428451342BCB1975A6C1019C /* Pods-OnDocCalendar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OnDocCalendar_Example.modulemap"; sourceTree = "<group>"; };
-		8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods-OnDocCalendar_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-OnDocCalendar_Tests"; path = Pods_OnDocCalendar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods_OnDocCalendar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnDocCalendar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE82842EF7BC40FC25D5A0BA978EE2A /* OnDocCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OnDocCalendar-dummy.m"; sourceTree = "<group>"; };
 		9D2053E09B6CB68E187EC2AF704DB8B5 /* OnDocCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OnDocCalendar.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A466CC5CE3F0819C16ED4F5A3640A78F /* OnDocCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnDocCalendar-umbrella.h"; sourceTree = "<group>"; };
-		A5523A1C52F5DE955134E875A46B4601 /* OnDocCalendar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OnDocCalendar; path = OnDocCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5523A1C52F5DE955134E875A46B4601 /* OnDocCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OnDocCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BC964ADC2A827D1F126F9DD0930443 /* ODCalendarCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODCalendarCell.swift; path = OnDocCalendar/Classes/ODCalendarCell.swift; sourceTree = "<group>"; };
 		AB707683D8C89383D6AE20AD3719149E /* ODCalendarMonth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODCalendarMonth.swift; path = OnDocCalendar/Classes/ODCalendarMonth.swift; sourceTree = "<group>"; };
 		BB5C2FAF2CA86B5FFCEB81F3286F2FAD /* OnDocCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OnDocCalendar-prefix.pch"; sourceTree = "<group>"; };
@@ -179,16 +193,15 @@
 				07084082C73436238B62998D36A46761 /* ODCalendarWeekdayHeader.swift */,
 				F4597BD8000367338092393F7FDFF5D4 /* Support Files */,
 			);
-			name = OnDocCalendar;
 			path = OnDocCalendar;
 			sourceTree = "<group>";
 		};
 		B7760091B6AA4F39B03FD05822A7C831 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5523A1C52F5DE955134E875A46B4601 /* OnDocCalendar */,
-				231F8BBE017A683BA7FF54FD34E76FF4 /* Pods-OnDocCalendar_Example */,
-				8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods-OnDocCalendar_Tests */,
+				A5523A1C52F5DE955134E875A46B4601 /* OnDocCalendar.framework */,
+				231F8BBE017A683BA7FF54FD34E76FF4 /* Pods_OnDocCalendar_Example.framework */,
+				8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods_OnDocCalendar_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,7 +286,7 @@
 			);
 			name = "Pods-OnDocCalendar_Example";
 			productName = Pods_OnDocCalendar_Example;
-			productReference = 231F8BBE017A683BA7FF54FD34E76FF4 /* Pods-OnDocCalendar_Example */;
+			productReference = 231F8BBE017A683BA7FF54FD34E76FF4 /* Pods_OnDocCalendar_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C48005F64340745CC01A1479910686F0 /* Pods-OnDocCalendar_Tests */ = {
@@ -292,7 +305,7 @@
 			);
 			name = "Pods-OnDocCalendar_Tests";
 			productName = Pods_OnDocCalendar_Tests;
-			productReference = 8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods-OnDocCalendar_Tests */;
+			productReference = 8B2A9958CBC9B7B822D6B8D40125B6F2 /* Pods_OnDocCalendar_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C8B273602779F41D41191C415DA635C7 /* OnDocCalendar */ = {
@@ -310,7 +323,7 @@
 			);
 			name = OnDocCalendar;
 			productName = OnDocCalendar;
-			productReference = A5523A1C52F5DE955134E875A46B4601 /* OnDocCalendar */;
+			productReference = A5523A1C52F5DE955134E875A46B4601 /* OnDocCalendar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -371,7 +384,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1291A65F2844F2EB002937AD /* ODCalendarDate.swift in Sources */,
 				B1F725126CE8B080FAEBF03C6E7523FC /* Pods-OnDocCalendar_Example-dummy.m in Sources */,
+				1291A6602844F2EB002937AD /* ODCalendarManager.swift in Sources */,
+				1291A65C2844F2EB002937AD /* ODCalendarColorSettings.swift in Sources */,
+				1291A65E2844F2EB002937AD /* ODCalendarCell.swift in Sources */,
+				1291A65B2844F2EB002937AD /* ODCalendarView.swift in Sources */,
+				1291A65D2844F2EB002937AD /* ODCalendarWeekdayHeader.swift in Sources */,
+				1291A65A2844F2EB002937AD /* ODCalendarMonth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +399,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1291A6662844F2EB002937AD /* ODCalendarDate.swift in Sources */,
 				A9F76D78C1D099D9C50A69622F4C1C38 /* Pods-OnDocCalendar_Tests-dummy.m in Sources */,
+				1291A6672844F2EB002937AD /* ODCalendarManager.swift in Sources */,
+				1291A6632844F2EB002937AD /* ODCalendarColorSettings.swift in Sources */,
+				1291A6652844F2EB002937AD /* ODCalendarCell.swift in Sources */,
+				1291A6622844F2EB002937AD /* ODCalendarView.swift in Sources */,
+				1291A6642844F2EB002937AD /* ODCalendarWeekdayHeader.swift in Sources */,
+				1291A6612844F2EB002937AD /* ODCalendarMonth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +471,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -478,6 +506,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -501,13 +530,14 @@
 				GCC_PREFIX_HEADER = "Target Support Files/OnDocCalendar/OnDocCalendar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/OnDocCalendar/OnDocCalendar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/OnDocCalendar/OnDocCalendar.modulemap";
 				PRODUCT_MODULE_NAME = OnDocCalendar;
 				PRODUCT_NAME = OnDocCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -610,6 +640,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -672,8 +703,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -707,6 +737,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -729,13 +760,14 @@
 				GCC_PREFIX_HEADER = "Target Support Files/OnDocCalendar/OnDocCalendar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/OnDocCalendar/OnDocCalendar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/OnDocCalendar/OnDocCalendar.modulemap";
 				PRODUCT_MODULE_NAME = OnDocCalendar;
 				PRODUCT_NAME = OnDocCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
