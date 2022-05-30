@@ -24,13 +24,13 @@ public class ODCalendarManager : ObservableObject {
     var colors = ODCalendarColorSettings()
     
     // MARK: - Init -
-    init(titleText: String,
-         rightButtonText: String,
-         doneButtonText: String,
-         brandingUIColor: UIColor = UIColor.orange,
-         minimumDate: Date,
-         maximumDate: Date,
-         disabledDates: [Date]) {
+    public init(titleText: String,
+                rightButtonText: String,
+                doneButtonText: String,
+                brandingUIColor: UIColor = UIColor.orange,
+                minimumDate: Date,
+                maximumDate: Date,
+                disabledDates: [Date]) {
         self.titleText = titleText
         self.rightButtonText = rightButtonText
         self.doneButtonText = doneButtonText
