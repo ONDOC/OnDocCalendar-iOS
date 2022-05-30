@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of OnDocCalendar.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/ONDOC/OnDocCalendar",
+  "homepage": "https://github.com/ONDOC/OnDocCalendar-iOS.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,11 @@
     "3684453": "r@resrom.com"
   },
   "source": {
-    "git": "https://github.com/ONDOC/OnDocCalendar.git",
+    "git": "https://github.com/ONDOC/OnDocCalendar-iOS.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "13.0"
+    "ios": "9.0"
   },
   "source_files": "OnDocCalendar/Classes/**/*"
 }

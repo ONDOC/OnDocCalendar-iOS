@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '13.0'
 
 target 'OnDocCalendar_Example' do
-  pod 'OnDocCalendar', :git => 'https://github.com/ONDOC/OnDocCalendar.git'
+  pod 'OnDocCalendar', :git => 'git@github.com:ONDOC/OnDocCalendar-iOS.git'
 
   target 'OnDocCalendar_Tests' do
     inherit! :search_paths

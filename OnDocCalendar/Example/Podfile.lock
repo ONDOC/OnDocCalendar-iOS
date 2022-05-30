@@ -2,15 +2,20 @@ PODS:
   - OnDocCalendar (0.1.0)
 
 DEPENDENCIES:
-  - OnDocCalendar (from `../`)
+  - "OnDocCalendar (from `git@github.com:ONDOC/OnDocCalendar-iOS.git`)"
 
 EXTERNAL SOURCES:
   OnDocCalendar:
-    :path: "../"
+    :git: "git@github.com:ONDOC/OnDocCalendar-iOS.git"
+
+CHECKOUT OPTIONS:
+  OnDocCalendar:
+    :commit: a8cd1ff75c56fe5c94112908f3b2f931236e5719
+    :git: "git@github.com:ONDOC/OnDocCalendar-iOS.git"
 
 SPEC CHECKSUMS:
-  OnDocCalendar: a38881009577c2dad6030849a1fd5ecf683f3caf
+  OnDocCalendar: 479e447c9580e082155ee6821f4f10c91213dcc3
 
-PODFILE CHECKSUM: ac26b4d14172a84abfd2523b03e7da24063dca21
+PODFILE CHECKSUM: d7f262ada7825b6f8b98bbb01f95d7b98bc2b32e
 
 COCOAPODS: 1.11.3
