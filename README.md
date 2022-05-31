@@ -16,7 +16,7 @@ let disabledDates = [Date().addingTimeInterval(86400 * 3),
 let minimumDate = Date() // Minimum today
 let maximumDate = Date().addingTimeInterval(86400 * 365) // Year ahead
 let selectedDate = Date() // Optional, can be nil
-let uiColorSheme = UIColor.blue // App color
+let uiColorSheme = CustomConfigAdapter.shared.color // App color
 // Create manager
 let manager = ODCalendarManager(minimumDate: minimumDate,
                                 maximumDate: maximumDate,
