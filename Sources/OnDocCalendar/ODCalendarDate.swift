@@ -40,7 +40,7 @@ struct ODCalendarDate {
         if isDisabled {
             textColor = manager.colors.disabledColor
         } else if isSelected {
-            textColor = manager.colors.selectedColor
+            textColor = manager.colors.activeColor
         } else if isToday {
             textColor = manager.colors.todayColor
         }
@@ -50,25 +50,25 @@ struct ODCalendarDate {
     func getBackgroundColor() -> Color {
         var backgroundColor = manager.colors.textBackColor
         if isToday {
-            backgroundColor = manager.colors.todayBackColor.opacity(0.25)
+            backgroundColor = manager.colors.todayBackColor
         }
         if isDisabled {
             backgroundColor = manager.colors.disabledBackColor
         }
         if isSelected {
-            backgroundColor = manager.colors.selectedBackColor
+            backgroundColor = manager.colors.activeBackColor
         }
         return backgroundColor
     }
     
     func getFontWeight() -> Font.Weight {
-        var fontWeight = Font.Weight.medium
+        var fontWeight = Font.Weight.semibold
         if isDisabled {
-            fontWeight = Font.Weight.medium
-        } else if isSelected {
             fontWeight = Font.Weight.semibold
-        } else if isToday {
+        } else if isSelected {
             fontWeight = Font.Weight.bold
+        } else if isToday {
+            fontWeight = Font.Weight.heavy
         }
         return fontWeight
     }

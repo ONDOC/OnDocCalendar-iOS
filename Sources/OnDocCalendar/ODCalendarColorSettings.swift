@@ -9,18 +9,17 @@
 import Foundation
 import SwiftUI
 
-class ODCalendarColorSettings : ObservableObject {
+class ODCalendarColorSettings: ObservableObject {
     // Foreground colors
     @Published var textColor: Color = Color.primary
     @Published var todayColor: Color = Color.white
-    @Published var selectedColor: Color = Color.white
+    @Published var activeColor: Color = Color.white
     @Published var disabledColor: Color = Color.gray
     // Background colors
     @Published var textBackColor: Color = Color.clear
     @Published var todayBackColor: Color = Color.gray
-    @Published var selectedBackColor: Color = Color.red
+    @Published var activeBackColor: Color = Color.red
     @Published var disabledBackColor: Color = Color.clear
-    @Published var betweenStartAndEndBackColor: Color = Color.blue
     // Headers foreground colors
     @Published var weekdayHeaderColor: Color = Color.gray
     @Published var monthHeaderColor: Color = Color.primary

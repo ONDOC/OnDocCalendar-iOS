@@ -42,14 +42,19 @@ struct ODCalendarWeekdayHeader : View {
 
 struct ODCalendarWeekdayHeader_Previews : PreviewProvider {
     static var previews: some View {
-        let manager = ODCalendarManager(titleText: "Title",
-                                        rightButtonText: "Right",
-                                        doneButtonText: "Done",
-                                        activeUIColor: UIColor.red,
-                                        disabledUIColor: UIColor.lightGray,
-                                        minimumDate: Date(),
-                                        maximumDate: Date().addingTimeInterval(60*60*24*365), disabledDates: [Date().addingTimeInterval(60*60*24*3),
-                                                                                                              Date().addingTimeInterval(60*60*24*4)], selectedDate: Date())
+        let disabledDates = [Date().addingTimeInterval(60 * 60 * 24 * 3),
+                             Date().addingTimeInterval(60 * 60 * 24 * 5),
+                             Date().addingTimeInterval(60 * 60 * 24 * 10)] // Disabled 3, 5, 10 days ahead
+        let minimumDate = Date() // Minimum today
+        let maximumDate = Date().addingTimeInterval(60 * 60 * 24 * 365) // Year ahead
+        let selectedDate = Date() // Optional, can be nil
+        let uiColorSheme = UIColor.orange
+        // Create manager
+        let manager = ODCalendarManager(minimumDate: minimumDate,
+                                        maximumDate: maximumDate,
+                                        disabledDates: disabledDates,
+                                        selectedDate: selectedDate,
+                                        uiColorSheme: uiColorSheme)
         
         ODCalendarWeekdayHeader(manager: manager)
     }

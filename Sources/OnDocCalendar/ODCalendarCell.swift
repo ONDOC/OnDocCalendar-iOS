@@ -11,15 +11,14 @@ import SwiftUI
 struct ODCalendarCell: View {
     // MARK: - Properties -
     var date: ODCalendarDate
-    var cellWidth: CGFloat
     var cellHeight: CGFloat
-    
     // MARK: - View -
     var body: some View {
         Text(date.getText())
             .fontWeight(date.getFontWeight())
             .foregroundColor(date.getTextColor())
-            .frame(width: cellWidth, height: cellHeight)
+            .frame(height: cellHeight)
+            .frame(maxWidth: .infinity)
             .font(.headline)
             .background(date.getBackgroundColor())
             .clipShape(Capsule())
@@ -28,42 +27,47 @@ struct ODCalendarCell: View {
 
 struct ODCalendarCell_Previews : PreviewProvider {
     static var previews: some View {
-        let manager = ODCalendarManager(titleText: "Title",
-                                        rightButtonText: "Right",
-                                        doneButtonText: "Done",
-                                        activeUIColor: UIColor.red,
-                                        disabledUIColor: UIColor.lightGray,
-                                        minimumDate: Date(),
-                                        maximumDate: Date().addingTimeInterval(60*60*24*365), disabledDates: [Date().addingTimeInterval(60*60*24*3),
-                                                                                                              Date().addingTimeInterval(60*60*24*4)], selectedDate: Date())
+        let disabledDates = [Date().addingTimeInterval(60 * 60 * 24 * 3),
+                             Date().addingTimeInterval(60 * 60 * 24 * 5),
+                             Date().addingTimeInterval(60 * 60 * 24 * 10)] // Disabled 3, 5, 10 days ahead
+        let minimumDate = Date() // Minimum today
+        let maximumDate = Date().addingTimeInterval(60 * 60 * 24 * 365) // Year ahead
+        let selectedDate = Date() // Optional, can be nil
+        let uiColorSheme = UIColor.orange
+        // Create manager
+        let manager = ODCalendarManager(minimumDate: minimumDate,
+                                        maximumDate: maximumDate,
+                                        disabledDates: disabledDates,
+                                        selectedDate: selectedDate,
+                                        uiColorSheme: uiColorSheme)
         Group {
             ODCalendarCell(date: ODCalendarDate(date: Date(),
                                                 manager: manager,
                                                 isDisabled: false,
                                                 isToday: false,
                                                 isSelected: false),
-                           cellWidth: CGFloat(32), cellHeight: CGFloat(22))
+                           cellHeight: CGFloat(22))
                 .previewDisplayName("Control")
             ODCalendarCell(date: ODCalendarDate(date: Date(),
                                                 manager: manager,
                                                 isDisabled: true,
                                                 isToday: false,
                                                 isSelected: false),
-                           cellWidth: CGFloat(32), cellHeight: CGFloat(22))
+                           cellHeight: CGFloat(22))
                 .previewDisplayName("Disabled Date")
             ODCalendarCell(date: ODCalendarDate(date: Date(),
                                                 manager: manager,
                                                 isDisabled: false,
                                                 isToday: true,
                                                 isSelected: false),
-                           cellWidth: CGFloat(32), cellHeight: CGFloat(22))
+                           cellHeight: CGFloat(22))
                 .previewDisplayName("Today")
             ODCalendarCell(date: ODCalendarDate(date: Date(),
                                                 manager: manager,
                                                 isDisabled: false,
                                                 isToday: false,
                                                 isSelected: true),
-                           cellWidth: CGFloat(32), cellHeight: CGFloat(22))
+                           cellHeight: CGFloat(22))
                 .previewDisplayName("Selected Date")
         }
         .previewLayout(.fixed(width: 300, height: 70))
