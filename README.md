@@ -1,33 +1,50 @@
 # OnDocCalendar
-```swift
-        import SwiftUI
-        import OnDocCalendar
+Calendar Integration Example
 
-        // Properties
-        let disabledDates = [Date().addingTimeInterval(60 * 60 * 24 * 3),
-                             Date().addingTimeInterval(60 * 60 * 24 * 5),
-                             Date().addingTimeInterval(60 * 60 * 24 * 10)] // Disabled 3, 5, 10 days ahead
-        let minimumDate = Date() // Minimum today
-        let maximumDate = Date().addingTimeInterval(60 * 60 * 24 * 365) // Year ahead
-        let selectedDate = Date() // Optional, can be nil
-        // Create manager
-        let manager = ODCalendarManager(titleText: "appointment_request_date".localized,
-                                        rightButtonText: "deselect_all".localized,
-                                        doneButtonText: "done".localized,
-                                        activeUIColor: CustomConfigAdapter.shared.color,
-                                        disabledUIColor: .lightGray,
-                                        minimumDate: minimumDate,
-                                        maximumDate: maximumDate,
-                                        disabledDates: disabledDates,
-                                        selectedDate: selectedDate)
-        // Create SwiftUI View
-        let swiftUIView = ODCalendarView(manager: manager,
-                                         dateSelected: { dateSelected in
-            print(dateSelected ?? "")
-            // Require dismissing UIViewController
-            self.dismiss(animated: true)
-        })
-        // Create UIViewController
-        let calendarViewController = UIHostingController(rootView: swiftUIView)
-        self.present(calendarViewController, animated: true)
+Connect repository via Swift Package Manager, then import module
+```swift
+import OnDocCalendar
+```
+Declare properties
+```swift
+// Properties for manager
+let disabledDates = [Date().addingTimeInterval(86400 * 3),
+                     Date().addingTimeInterval(86400 * 5),
+                     Date().addingTimeInterval(86400 * 10)] // Not available dates - for example 3, 5, 10 days ahead
+let minimumDate = Date() // Minimum today
+let maximumDate = Date().addingTimeInterval(86400 * 365) // Year ahead
+let selectedDate = Date() // Optional, can be nil
+let uiColorSheme = UIColor.blue // App color
+// Create manager
+let manager = ODCalendarManager(minimumDate: minimumDate,
+                                maximumDate: maximumDate,
+                                disabledDates: disabledDates,
+                                selectedDate: selectedDate,
+                                uiColorSheme: uiColorSheme)
+// Properties for View
+let titleText = "appointment_request_date".localized
+let rightButtonText = "deselect_all".localized
+let doneButtonText = "done".localized
+```
+For integration in UIKit project
+```swift
+// Import SwiftUI for using UIHostingController
+import SwiftUI
+// Create SwiftUI View
+let swiftUIView = ODCalendarView(titleText: titleText,
+                                 rightButtonText: rightButtonText,
+                                 doneButtonText: doneButtonText,
+                                 manager: manager,
+                                 dateSelected: { dateSelected in
+        self.dismiss(animated: true)
+        if let dateSelected = dateSelected {
+           print(dateSelected)
+        }
+        else {
+           print("No selected date")
+        }
+})
+// Create UIViewController
+let calendarViewController = UIHostingController(rootView: swiftUIView)
+self.present(calendarViewController, animated: true)
 ```
