@@ -1,6 +1,8 @@
 # OnDocCalendar
 Calendar Integration Example
 
+<img src="https://raw.githubusercontent.com/ONDOC/OnDocCalendar-iOS/master/demo.jpeg?token=GHSAT0AAAAAABS66UP7NBY23UIYBVJACFTSYUVVNMA" width="250">
+
 Connect repository via Swift Package Manager, then import module
 ```swift
 import OnDocCalendar
