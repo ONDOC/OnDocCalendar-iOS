@@ -18,7 +18,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "https://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:x-oauth-basic@github.com/ONDOC/OnDocCalendar-iOS.git",
+        .package(url: "https://romacv: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@github.com/ONDOC/OnDocCalendar-iOS.git",
                    from: "1.0.0")
     ],
     targets: [
