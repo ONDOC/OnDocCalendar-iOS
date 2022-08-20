@@ -1,0 +1,6 @@
+framework module OnDocCalendar_iOS_Pod {
+  umbrella header "OnDocCalendar-iOS-Pod-umbrella.h"
+
+  export *
+  module * { export * }
+}

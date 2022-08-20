@@ -1,0 +1,16 @@
+PODS:
+  - OnDocCalendar-iOS-Pod (0.1.0)
+
+DEPENDENCIES:
+  - OnDocCalendar-iOS-Pod (from `../`)
+
+EXTERNAL SOURCES:
+  OnDocCalendar-iOS-Pod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OnDocCalendar-iOS-Pod: 6087792696b29ace8aeae246e8bf0814d7e48cde
+
+PODFILE CHECKSUM: 532c0ac7c5d64013800034e84bf2d7f502f8ae46
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,22 @@
+{
+  "name": "OnDocCalendar-iOS-Pod",
+  "version": "0.1.0",
+  "summary": "A short description of OnDocCalendar-iOS-Pod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/3684453/OnDocCalendar-iOS-Pod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "3684453": "r@resrom.com"
+  },
+  "source": {
+    "git": "https://github.com/3684453/OnDocCalendar-iOS-Pod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "OnDocCalendar-iOS-Pod/Classes/**/*"
+}
