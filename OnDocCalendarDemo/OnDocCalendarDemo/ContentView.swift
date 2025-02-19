@@ -26,11 +26,10 @@ struct ContentView: View {
                                         uiColorSheme: uiColorSheme)
         // Properties for View
         let titleText = "appointment_date"
-        let rightButtonText = "Сбросить"
         let doneButtonText = "Done"
         // Create View
         ODCalendarView(titleText: titleText,
-                       rightButtonText: rightButtonText,
+                       closeImage: Image(systemName: "xmark"),
                        doneButtonText: doneButtonText,
                        manager: manager,
                        dateSelected: { dateSelected in

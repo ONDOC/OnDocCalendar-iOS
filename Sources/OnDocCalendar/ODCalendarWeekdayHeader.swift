@@ -18,10 +18,9 @@ struct ODCalendarWeekdayHeader : View {
             ForEach(self.getWeekdayHeaders(calendar: self.manager.calendar),
                     id: \.self) { weekday in
                 Text(weekday.uppercased())
-                    .font(.body)
+                    .font(.system(size: 12))
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .foregroundColor(self.manager.colors.weekdayHeaderColor)
-                
             }
         }
         .background(manager.colors.weekdayHeaderBackColor)

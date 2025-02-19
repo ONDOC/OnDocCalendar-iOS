@@ -11,18 +11,18 @@ import SwiftUI
 public struct ODCalendarView: View {
     // MARK: - Properties -
     var titleText: String!
-    var rightButtonText: String!
+    var closeImage: Image!
     var doneButtonText: String!
     @ObservedObject var manager: ODCalendarManager
     var dateSelected: ((Date?) -> Void)
     // MARK: - Init -
     public init(titleText: String,
-                rightButtonText: String,
+                closeImage: Image,
                 doneButtonText: String,
                 manager: ODCalendarManager,
                 dateSelected: @escaping ((Date?) -> Void)) {
         self.titleText = titleText
-        self.rightButtonText = rightButtonText
+        self.closeImage = closeImage
         self.doneButtonText = doneButtonText
         self.manager = manager
         self.dateSelected = dateSelected
@@ -34,34 +34,30 @@ public struct ODCalendarView: View {
                 Text(titleText)
                     .padding()
                     .font(.headline)
+                
                 Spacer()
-                HStack(alignment: .center,
-                       spacing: 0) {
+                
+                HStack(spacing: 0) {
                     Button {
                         dateSelected(nil)
                     } label: {
-                        Image(systemName: "xmark")
-                            .renderingMode(.template)
-                            .foregroundColor(manager.colors.activeBackColor)
-                            .frame(width: 32, height: 32)
-                            .background(manager.colors.todayBackColor.opacity(0.15))
-                            .clipShape(Circle())
+                        ZStack {
+                            Circle()
+                                .frame(width: 32, height: 32)
+                                .foregroundStyle(manager.colors.todayBackColor)
+                            closeImage
+                                .foregroundStyle(manager.colors.activeBackColor)
+                        }
                     }
                     Spacer()
-                    Button {
-                        manager.selectedDate = nil
-                    } label: {
-                        Text(rightButtonText)
-                            .font(.headline)
-                            .foregroundColor(manager.colors.activeBackColor)
-                    }
                 }
-                       .padding(.leading, 15)
-                       .padding(.trailing, 15)
-                       .frame(maxWidth: .infinity)
+                .padding(.horizontal, 12)
+                .frame(maxWidth: .infinity)
             }
+            
             ODCalendarWeekdayHeader(manager: self.manager)
                 .padding()
+            
             List {
                 ForEach(0..<numberOfMonths(), id: \.self) { index in
                     ODCalendarMonth(manager: self.manager,
@@ -71,39 +67,26 @@ public struct ODCalendarView: View {
             }
             .listStyle(PlainListStyle())
             
-            VStack {
-                Text("")
+            Button {
+                dateSelected(manager.selectedDate)
+            } label: {
+                Text(doneButtonText)
+                    .font(.headline)
+                    .foregroundColor(manager.selectedDate == nil ? manager.colors.disabledColor : Color.white)
                     .frame(maxWidth: .infinity)
-                    .frame(height: 1)
-                    .border(.gray.opacity(0.25), width: 0.5)
-                    .shadow(color: .gray, radius: 3, x: 0, y: -3)
-                    .padding(.bottom, 15)
-                    .opacity(0.5)
-                
-                Button(action: {
-                    dateSelected(manager.selectedDate)
-                }) {
-                    HStack {
-                        Spacer()
-                        Text(doneButtonText)
-                            .font(.headline)
-                            .foregroundColor(Color.white)
-                        Spacer()
-                    }
-                    .contentShape(Rectangle())
-                }
-                .padding()
-                .disabled(manager.selectedDate == nil)
-                .frame(maxWidth: .infinity)
-                .background(manager.selectedDate == nil ?  manager.colors.disabledColor : manager.colors.activeBackColor)
-                .cornerRadius(15)
-                
-                .padding(.leading, 15)
-                .padding(.trailing, 15)
-                .frame(maxWidth: .infinity)
+                    .frame(height: 44)
             }
-            
-            
+            .disabled(manager.selectedDate == nil)
+            .background(manager.selectedDate == nil ?  manager.colors.todayBackColor : manager.colors.activeBackColor)
+            .cornerRadius(14)
+            .padding(.horizontal)
+            .padding(.top)
+            .frame(maxWidth: .infinity)
+            .background {
+                Color.white
+                    .edgesIgnoringSafeArea(.bottom)
+                    .shadow(color: Color.black.opacity(0.15), radius: 10, y: -2)
+            }
         }
     }
     
@@ -156,7 +139,7 @@ struct ODCalendarView_Previews : PreviewProvider {
                                         uiColorSheme: uiColorSheme)
         //manager.colors.activeBackColor = Color(.blue)
         ODCalendarView(titleText: "Дата приема",
-                       rightButtonText: "Сбросить",
+                       closeImage: Image(systemName: "xmark"),
                        doneButtonText: "done",
                        manager: manager,
                        dateSelected: { dateSelected in
