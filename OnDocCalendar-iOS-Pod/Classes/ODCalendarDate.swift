@@ -82,7 +82,7 @@ struct ODCalendarDate {
     
     func dateFormatter() -> DateFormatter {
         let formatter = DateFormatter()
-        formatter.locale = .current
+        formatter.locale = manager.calendar.locale
         formatter.dateFormat = "d"
         return formatter
     }

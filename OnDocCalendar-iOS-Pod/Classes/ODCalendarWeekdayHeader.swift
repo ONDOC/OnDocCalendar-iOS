@@ -28,6 +28,8 @@ struct ODCalendarWeekdayHeader : View {
     
     func getWeekdayHeaders(calendar: Calendar) -> [String] {
         let formatter = DateFormatter()
+        formatter.calendar = calendar
+        formatter.locale = calendar.locale
         var weekdaySymbols = formatter.shortStandaloneWeekdaySymbols
         let weekdaySymbolsCount = weekdaySymbols?.count ?? 0
         for _ in 0 ..< (1 - calendar.firstWeekday + weekdaySymbolsCount){

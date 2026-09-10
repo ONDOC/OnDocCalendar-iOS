@@ -92,6 +92,7 @@ struct ODCalendarMonth: View {
     func getMonthHeader() -> String {
         let headerDateFormatter = DateFormatter()
         headerDateFormatter.calendar = manager.calendar
+        headerDateFormatter.locale = manager.calendar.locale
         headerDateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "LLLL",
                                                                   options: 0,
                                                                   locale: manager.calendar.locale)
